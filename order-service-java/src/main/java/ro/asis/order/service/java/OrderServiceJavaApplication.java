@@ -5,7 +5,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableEurekaClient
-@SpringBootApplication
+@SpringBootApplication(
+        scanBasePackages = {
+                "ro.asis.commons",
+                "ro.asis.client.client",
+                "ro.asis.account.client",
+                "ro.asis.provider.client",
+                "ro.asis.order.java",
+                "ro.asis.order.service.java"
+        }
+)
 public class OrderServiceJavaApplication {
 
     public static void main(String[] args) {
