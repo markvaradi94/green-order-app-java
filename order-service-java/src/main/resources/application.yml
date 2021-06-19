@@ -1,9 +1,9 @@
 server:
-  port: 8601
+  port: 8505
 
 spring:
   application:
-    name: order-service-java
+    name: java-order-service
   data:
     mongodb:
       uri: "mongodb+srv://mark:mazare123@greencluster.rewht.mongodb.net/GreenAppDB?retryWrites=true&w=majority"
@@ -21,3 +21,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+
+account-service-location: "http://localhost:8501"
+client-service-location: "http://localhost:8502"
+order-service-location: "http://localhost:8503"
+provider-service-location: "http://localhost:8504"
+java-order-service-location: "http://localhost:8505"
