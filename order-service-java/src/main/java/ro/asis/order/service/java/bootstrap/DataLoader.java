@@ -16,14 +16,14 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        service.addOrder(
-                OrderEntity.builder()
-                        .clientId("1234test")
-                        .providerId("56345test")
-                        .status(COMPLETED)
-                        .bags(emptyList())
-                        .totalPrice(289.34)
-                        .build()
-        );
+//        service.addOrder(
+//                OrderEntity.builder()
+//                        .clientId("1234test")
+//                        .providerId("56345test")
+//                        .status(COMPLETED)
+//                        .bags(emptyList())
+//                        .totalPrice(289.34)
+//                        .build()
+//        );
     }
 }
